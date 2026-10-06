@@ -1,0 +1,9 @@
+name: GMMath
+version: '1.0'
+main: com.gmmath.GMMathPlugin
+api-version: '1.21'
+commands:
+  math:
+    description: Lệnh chính của GMMath
+    aliases: [gmmath]
+    permission: gmmath.admin

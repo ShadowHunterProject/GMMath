@@ -1,0 +1,94 @@
+# Cấu hình thời gian
+auto-start: true
+interval-seconds: 600
+duration-seconds: 30
+
+# Các chế độ chơi được bật (MATH, TRIVIA)
+enabled-modes:
+  - MATH
+  - TRIVIA
+
+# Cấu hình phép tính (chế độ MATH)
+math:
+  min-number: 20
+  max-number: 1000
+  operators:
+    - "+"
+    - "-"
+    - "*"
+
+# Danh sách câu đố (chế độ TRIVIA)
+# Hỗ trợ đố vui, điền từ vào chỗ trống...
+trivia:
+  q1:
+    question: "Con gì kêu meo meo?"
+    answer: "con mèo"
+  q2:
+    question: "Một con ngựa đau cả tàu ..."
+    answer: "bỏ cỏ"
+  q3:
+    question: "Thủ đô của Việt Nam là thành phố nào?"
+    answer: "Hà Nội"
+  q4:
+    question: "Đỉnh núi nào cao nhất thế giới?"
+    answer: "Everest"
+  q5:
+    question: "Hành tinh nào gần mặt trời nhất trong hệ mặt trời?"
+    answer: "Sao Thủy"
+  q6:
+    question: "Động vật lớn nhất hành tinh hiện nay là gì?"
+    answer: "Cá voi xanh"
+  q7:
+    question: "Ai là người phát minh ra bóng đèn điện sợi đốt?"
+    answer: "Edison"
+  q8:
+    question: "Sắp xếp từ bị xáo trộn: e M r a c t i f n"
+    answer: "Minecraft"
+  q9:
+    question: "Sắp xếp từ bị xáo trộn: i m Z e o b"
+    answer: "Zombie"
+  q10:
+    question: "Quốc gia nào có diện tích lớn nhất thế giới?"
+    answer: "Nga"
+  q11:
+    question: "Cái gì người mua biết, người bán biết, người xài không bao giờ biết?"
+    answer: "Quan tài"
+  q12:
+    question: "Môn thể thao nào được mệnh danh là môn thể thao vua?"
+    answer: "Bóng đá"
+  q13:
+    question: "Sắp xếp từ bị xáo trộn: C e r r p e e"
+    answer: "Creeper"
+  q14:
+    question: "Sông nào dài nhất thế giới?"
+    answer: "Sông Nile"
+  q15:
+    question: "Bức tranh Nàng Mona Lisa nổi tiếng do ai vẽ?"
+    answer: "Da Vinci"
+  q16:
+    question: "Điền vào chỗ trống: Gần mực thì đen, gần ... thì rạng"
+    answer: "đèn"
+  q17:
+    question: "Điền vào chỗ trống: Có công mài sắt, có ngày nên ..."
+    answer: "kim"
+  q18:
+    question: "Loại quặng nào hiếm nhất trong thế giới Minecraft (Overworld) trước phiên bản 1.16?"
+    answer: "Kim cương"
+
+# Phần thưởng (Chạy các lệnh console)
+rewards:
+  - "p give %player% 1"
+
+# Tin nhắn
+messages:
+  prefix: "&8[&eHệ Thống&8] "
+  game-started-math: "&aTrò chơi giải toán bắt đầu! Nhanh tay giải phép tính: &e%math% = ?"
+  game-started-trivia: "&aTrò chơi đố vui bắt đầu! Câu hỏi: &e%question%"
+  game-ended-no-winner: "&cĐã hết giờ! Không ai trả lời đúng. Đáp án là: &e%result%"
+  game-won: "&aNgười chơi &e%player% &ađã xuất sắc giải đúng! Đáp án: &e%result%"
+  no-permission: "&cBạn không có quyền sử dụng lệnh này."
+  reload-success: "&aĐã tải lại cấu hình thành công!"
+  game-already-running: "&cĐang có một trò chơi diễn ra rồi!"
+  game-force-started: "&aĐã bắt buộc khởi động trò chơi mới!"
+  game-force-stopped: "&aĐã dừng trò chơi hiện tại!"
+  game-not-running: "&cKhông có trò chơi nào đang diễn ra!"
